@@ -28,6 +28,30 @@
 - [ ] test more stuff
 `
         }
+
+        const getFiles = async (username, repo, resolve, reject=()=>{}) => {
+            const request = new XMLHttpRequest()
+            request.onload = () => {
+                if (request.status === 200) {
+                    resolve(JSON.parse(request.response))
+                } else {
+                    reject(`error ${request.status} ${request.statusText}`)
+                }
+            }
+            request.open('get', `https://api.github.com/repos/${username}/${repo}/contents
+`)
+            request.send()
+        }
+
+        var stuff = []
+
+        getFiles('madhaven', 'blog', content=>{
+            console.log('content', content)
+            stuff = []
+            content.forEach(file => {
+                if (file.name.endsWith('md')) stuff.push(file)
+            });
+        })
     </script>
 </head>
 <body>
