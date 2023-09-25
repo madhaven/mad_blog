@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+
+    <!-- Showdown.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.js"></script>
+    <!-- Markdown-it -->
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.1.0/dist/markdown-it.min.js"></script>
+
+    <script>
+        const mdit = window.markdownit()
+            , makeHTML = md => {
+            return mdit.render(md)
+        }
+        
+        // const showdown = new showdown.Converter()
+        //     , makeHTML = md => {
+        //     return showdown.makeHtml(md)
+        // }
+
+        const getContent = () => {
+            return `# heading  
+- [x] test stuff
+- [ ] test more stuff
+`
+        }
+    </script>
+</head>
+<body>
+    <div id="html_from_md"></div>
+    <script>
+    document.getElementById('html_from_md').innerHTML = makeHTML(getContent())
+    </script>
+</body>
+</html>
