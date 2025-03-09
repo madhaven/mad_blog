@@ -1,9 +1,6 @@
 # Hello World
 
-The idea of documenting your progress may not occur to a lot of folks. But think about it.  
-On the long run, we might not remember these small moments that changed our life.
-
-## 2014
+## 2014 - 2016
 
 Computer Science was just another subject in high school.  Programming first hit me as amusing when my friend showed me a cpp program online that rained characters on the black screen. For the average student learning to add numbers with a program, this felt like a really amazing thing to do.  
 
@@ -28,7 +25,7 @@ By the time I was pleased with what I could do with a computer, I wanted to make
 My approach was to build a dictionary of Words and all verbs and its tenses. This made me build a cpp data file with the entire collection of English verbs and their conjugations.  
 It was a failure when the intelligence required to put the English together didn't work out. But I learnt a lot of cpp and later realized that what I had built was a primeval database.
 
-## 2016
+## 2016 - 2021
 
 In college, I focused most on accumulating every knowledge I could about Computers.  
 With the plenty of information available all around my attention and interest were scattered all around the place and the most natural thing to do was ingest all of it. So I learned a lot about programming, internet networks and all that.  
@@ -38,7 +35,7 @@ We learned programming paradigms, languages like C, CPP, Java, PHP, SQL, Python 
 
 This wasn't enough. I wanted to build things.  
 We took on a couple of projects small and big, this helped to serve as passive income while equally helping us learn more about running a website and implementing logic for various scenarios.  
-I also worked on my peronal projects and I wish I did a lot more of that.  
+I also worked on my personal projects and I wish I did a lot more of that.  
 
 By the time Python gained fame, I was building more scripts again.  
 I didn't focus a lot on web development at the time, so I built projects that mainly focused on logic.  
@@ -50,7 +47,7 @@ My dreams and plans changed, the possibilities opened up.
 ChatGPT didn't exist then and the hype around AI was just gaining momentum.  I learned a lot about how it all worked but by the time I was ready to fully put my knowledge into experiments it was time to graduate.  
 I found a job soon and the passage of time was never the same again.
 
-## 2021 - 2024
+## 2021
 
 If I were to progress with my prior dreams and projects, I had to find time for my projects.  
 I built [ProTracker][4] to keep a track on my to-do list. This was a learning experience in terms of the Product Development and processes involved.  
