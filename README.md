@@ -9,14 +9,18 @@ In each blog, I wish to
 * explore possibilities for better systems.
 * keep it simple.
 
-## Blogs
+## Posts
 
-* [Hello World][1] - my advent into Computer Science
+| Date | Post |
+|:---:|:---|
+| 20250427 | [How Dotnet changed me][4]: why we should open our minds to new frameworks and tools |
+| 20240618 | [Hello World][1]: my advent into Computer Science |
 
 ---
 reach out to me by [raising a pull request][2] on [this repo][3].  
-_last updated on Tuesday 18 June, 2024_  
+_last updated on Tuesday 27 April, 2025_  
 
 [1]: ./content/HelloWorld.md
 [2]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
 [3]: https://github.com/madhaven/mad_blog
+[4]: ./content/HowDotnetChangedMe.md
