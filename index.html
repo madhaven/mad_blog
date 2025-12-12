@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitin</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Fallback for older browsers */
+            background-image: radial-gradient(ellipse at center, #0a1027 0%, #000000 75%);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            color: rgba(245, 245, 245, 0.85); /* Off-white with transparency */
+            font-size: 4vw; /* Responsive font size */
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        @media (min-width: 1200px) {
+            h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="typing-title"></h1>
+
+    <script>
+        window.onload = function() {
+            const titleElement = document.getElementById('typing-title');
+            const textToType = "Hello, #I am Jitin.";
+            // Delays now match the new string. The '#' has a delay before wiping.
+            const delays = [120, 110, 100, 90, 130, 500, 300, 200, 90, 110, 120, 80, 500, 100, 90, 110, 120, 100, 500];
+            let index = 0;
+
+            function typeWriter() {
+                if (index < textToType.length) {
+                    const char = textToType.charAt(index);
+                    const delay = delays[index];
+
+                    if (char === '#') {
+                        // Wipe the content when '#' is found
+                        titleElement.innerHTML = '';
+                        index++;
+                        setTimeout(typeWriter, delay);
+                    } else {
+                        // Otherwise, type the character normally
+                        titleElement.innerHTML += char;
+                        index++;
+                        setTimeout(typeWriter, delay);
+                    }
+                }
+            }
+
+            typeWriter();
+        };
+    </script>
+</body>
+</html>
